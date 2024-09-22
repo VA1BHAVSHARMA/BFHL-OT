@@ -84,8 +84,8 @@ app.post('/bfhl', (req, res) => {
 // app.use('/api/', dataRoutes)
 
 // listen for requests
-app.listen(port, 
-    () => {console.log("Listening to port no.", port)}
+app.listen(1110, 
+    () => {console.log("Listening to port no.", 1110)}
 )
 
 
