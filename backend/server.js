@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use(cors({
-    origin: ["https://bfhl-frontend-sigma-pied.vercel.app/"],
+    origin: ["https://bfhl-frontend-sigma-pied.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
     }
