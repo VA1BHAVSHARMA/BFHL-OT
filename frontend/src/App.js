@@ -14,7 +14,7 @@ function App() {
     const handleSubmit = async () => {
         try {
             const parsedInput = JSON.parse(jsonInput); 
-            const res = await axios.post('https://bfhl-api-delta-sage.vercel.app/', parsedInput); 
+            const res = await axios.post('https://bfhl-api-delta-sage.vercel.app', parsedInput); 
             setResponse(res.data);
             // console.log(response);
         } catch (error) {
