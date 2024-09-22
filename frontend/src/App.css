@@ -1,0 +1,73 @@
+/* Styling the main container */
+div {
+  font-family: Arial, sans-serif;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Styling the API Input textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Styling the submit button */
+button {
+  background-color: #0056b3; /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #004095;
+}
+
+/* Styling the multi-select dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+option {
+  padding: 10px;
+}
+
+/* Styling the Filtered Response section */
+pre {
+  text-align: left;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+h1 {
+  color: #0056b3;
+}
+
+/* Adding some margin to the filtered response */
+.filtered-response {
+  margin-top: 10px;
+  font-weight: bold;
+}
