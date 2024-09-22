@@ -3,7 +3,6 @@
 // header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Request-With');
 
 const express = require('express')
-const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
@@ -11,7 +10,7 @@ const port = process.env.PORT || 1110
 
 
 // middleware
-app.use(bodyParser.json())
+app.use(express.json())
 
 // process logs in console
 app.use((req, res, next) => {
@@ -81,7 +80,6 @@ app.post('/bfhl', (req, res) => {
     });
 });
 
-// app.use('/api/', dataRoutes)
 
 // listen for requests
 app.listen(1110, 
