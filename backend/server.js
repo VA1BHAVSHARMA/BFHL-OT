@@ -18,7 +18,12 @@ app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()
 })
-app.use(cors());
+app.use(cors({
+    origin: ["https://bfhl-frontend-sigma-pied.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+    }
+));
 
 //Get endpoint
 app.get('/bfhl', (req, res) =>{
